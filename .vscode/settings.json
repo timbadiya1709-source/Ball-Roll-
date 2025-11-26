@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Ball-Roll-Game.sln"
+    "dotnet.defaultSolution": "Ball-Roll-.sln"
 }

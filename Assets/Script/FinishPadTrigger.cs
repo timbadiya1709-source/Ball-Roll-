@@ -27,16 +27,14 @@ public class FinishPadTrigger : MonoBehaviour
 
     void PlayFinishAudioAndLoadScene()
     {
+        // Play finish audio immediately without waiting
         if (audioSource != null && finishAudio != null)
         {
             audioSource.PlayOneShot(finishAudio);
-            // Load scene after sound delay
-            Invoke(nameof(LoadScoreScene), finishAudio.length);
         }
-        else
-        {
-            LoadScoreScene(); // Fallback, no audio
-        }
+        
+        // Load scene instantly
+        LoadScoreScene();
     }
 
     void LoadScoreScene()
